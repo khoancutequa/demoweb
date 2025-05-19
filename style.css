@@ -1,15 +1,87 @@
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f0f8ff;
+
 }
-html,body {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  place-items: center;
-  background-color: #d2dae2;
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: blue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+section h2 {
+  margin-top: 0;
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  padding: 1rem;
+}
+form input,
+form textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #555;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+nav ul li a .fa-facebook {
+  margin-right: 0.5rem;
+}
+.fa-instagram {
+  color: palevioletred;
+}
+.mess {
+  font-size: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 .container {
   display: inline-flex;
@@ -34,10 +106,12 @@ html,body {
   border-radius: 50%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  left: 970px;
 }
 .container .icon span i {
   font-size: 25px;
   line-height: 60px;
+
 }
 .container .icon:hover span i {
   color: #d2dae2;
@@ -54,6 +128,7 @@ html,body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  left: 940px;
 }
 .container .icon:hover .tooltip {
   top: -70px;
